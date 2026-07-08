@@ -71,3 +71,27 @@ env/
 # ==========================
 tmp/
 temp/
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment
+.env
+.env.*
+
+# Logs
+*.log
+npm-debug.log*
+
+# Build
+dist/
+build/
+coverage/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
