@@ -1,16 +1,50 @@
-# React + Vite
+# Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend application for the placement training project.
 
-Currently, two official plugins are available:
+## Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- Vite
+- React Router
 
-## React Compiler
+## Run Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Install dependencies
 
-## Expanding the ESLint configuration
+	npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Start dev server
+
+	npm run dev
+
+3. Open in browser
+
+	http://localhost:5173
+
+## Build and Preview
+
+- npm run build
+- npm run preview
+
+## Lint
+
+- npm run lint
+
+## App Routes
+
+- / : login page
+- /show-student : student listing page
+- /add-student : add student page
+- /update-student : update student page
+- /delete-student : delete student page
+
+## Current Behavior
+
+- Login currently checks hardcoded credentials.
+- Student list is currently rendered from local static data file.
+- API integration can be added next for full CRUD flow.
+
+## Recommended Next Step
+
+Connect frontend forms and student pages to backend endpoints and move authentication to backend validation.
